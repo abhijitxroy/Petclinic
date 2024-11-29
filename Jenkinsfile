@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh "mvn clean package -DskipTests=true"
+                sh "mvn clean package"
             }
         }
         stage('Deploy') {
